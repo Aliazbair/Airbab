@@ -1,0 +1,13 @@
+# task tow to build airbab app clone
+- Adding useState to the Header Component
+- Adding onto the Header Component
+- Implementing the Date Picker
+- Building the Search Component
+- Explaining Server Side Rendering
+- Implementing Search Results using Server Side Rendering (1/2)
+- Creating the InfoCard Component-- Implementing Search Results using Server Side Rendering (2/2)
+- Building the InfoCard Component
+- Implementing the Loading Bar
+- Final Build Demo
+- Redeploying the Build
+- Outro
