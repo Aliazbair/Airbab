@@ -13,7 +13,7 @@ export default function Map({ searchResults }) {
   // console.log(coordinates);
   // the latitude and longitude of the center locations coordinates
   const center = getCenter(coordinates);
-  console.log(center);
+  // console.log(center);
   // setup viewport for map
   const [viewport, setViewport] = useState({
     width: "100%",

@@ -6,7 +6,7 @@ import InfoCrad from "../components/InfoCrad";
 import Map from "../components/Map";
 
 export default function Search({ searchResults }) {
-  console.log(searchResults);
+  // console.log(searchResults);
   const router = useRouter();
   const { startDate, endDate, location, noOfGuests } = router.query;
   // console.log(location);
