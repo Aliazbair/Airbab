@@ -3,9 +3,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { format } from "date-fns";
 import InfoCrad from "../components/InfoCrad";
+import Map from "../components/Map";
 
 export default function Search({ searchResults }) {
-  console.log(searchResults);
+  // console.log(searchResults);
   const router = useRouter();
   const { startDate, endDate, location, noOfGuests } = router.query;
   // console.log(location);
@@ -43,7 +44,7 @@ export default function Search({ searchResults }) {
           {/* show search result */}
           <div className="flex flex-col">
             {searchResults.map(
-              ({ img, title, description, star, price, total,location }) => (
+              ({ img, title, description, star, price, total, location }) => (
                 <InfoCrad
                   key={img}
                   img={img}
@@ -57,6 +58,10 @@ export default function Search({ searchResults }) {
               )
             )}
           </div>
+        </section>
+        {/* section 2 map */}
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
